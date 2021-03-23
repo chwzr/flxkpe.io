@@ -30,7 +30,7 @@ export default function About() {
                 href="https://cavorit.de/"
                 target="_blank"
                 rel="noopener noreferrer"
-              >▲Cavorit</a>&nbsp;as a Systems Design Architect.
+              >▲Cavorit</a>&nbsp;as a System Architect, Developer Advocate and UX Designer.
             </p>
             <p>
               I grew up in the Bauhaus City of Dessau, and still live here. But I'm also a lot in Berlin.<br/>
