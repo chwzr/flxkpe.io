@@ -27,9 +27,9 @@ const BlogPost = (props) => {
       <a className="w-full" target="_blank" rel="noopener noreferrer" href={url} onClick={countClick}>
         <div className="mb-8 w-full">
           <div className="flex flex-col md:flex-row justify-between">
-            <div className="flex items-center mb-2 text-gray-900 dark:text-gray-100">
+            <div className="flex items-start mb-2 text-gray-900 dark:text-gray-100">
               <span className="sr-only">External Link</span>
-              <svg className="h-5 w-5 mr-2" viewBox="0 0 24 24">
+              <svg className="h-5 w-5 mr-2 mt-1" viewBox="0 0 24 24">
                 <g
                   fill="none"
                   stroke="currentColor"
@@ -47,11 +47,16 @@ const BlogPost = (props) => {
               </h4>
             </div>
 
-            <p className="text-gray-500 text-left md:text-right w-64 mb-4 md:mb-0">
-                {`${category ? category + ' • ' : ''} ${views ? format(views) : '–––'} clicks`} 
-            </p>
+            <div className="hidden md:flex text-gray-500 text-left md:text-right w-64 mb-4 md:mb-0 flex-row justify-end">
+              <div className="inline-flex font-hairline rounded-full h-6 px-3 justify-center items-center text-xs">
+                 {`${views ? format(views) : ' • '} clicks`} 
+              </div>
+              <div style={{minWidth: 80}} className="inline-flex bg-gray-100 dark:bg-gray-700 rounded-full h-6 px-3 justify-center items-center">
+                {`${category ? category  : ''} `}
+              </div>
+            </div>
           </div>
-          <p className="text-gray-600 dark:text-gray-400 font-thin">{summary}</p>
+          <p className="md: ml-7 text-gray-600 dark:text-gray-400 font-thin">{summary}</p>
         </div>
       </a>
     )
@@ -65,9 +70,14 @@ const BlogPost = (props) => {
             <h4 className="text-lg md:text-xl font-medium mb-2 w-full text-gray-900 dark:text-gray-100">
               {title}
             </h4>
-            <p className="text-gray-500 text-left md:text-right w-64 mb-4 md:mb-0">
-              {`${category ? category + ' • ' : ''} ${views ? format(views) : '–––'} views`} 
-            </p>
+            <div className="hidden md:flex text-gray-500 text-left md:text-right w-64 mb-4 md:mb-0 flex-row justify-end">
+              <div className="inline-flex font-hairline rounded-full h-6 px-3 justify-center items-center text-xs">
+                 {`${views ? format(views) : ' • '} views`} 
+              </div>
+              <div style={{minWidth: 80}} className="inline-flex bg-gray-100 dark:bg-gray-700 rounded-full h-6 px-3 justify-center items-center">
+                {`${category ? category  : ''} `}
+              </div>
+            </div>
           </div>
           <p className="text-gray-600 dark:text-gray-400 font-thin">{summary}</p>
         </div>
