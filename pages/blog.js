@@ -18,11 +18,11 @@ export default function Blog({ posts }) {
   return (
     <Container
       title="Blog – Felix Koppe"
-      description="Thoughts on the software industry, programming, tech, videography, music, and my personal life."
+      description="Thoughts on the software industry, design, tech, music, and my personal life."
     >
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-          Thoughts on the software industry, programming, design, tech, music, and my personal life.
+          Thoughts on the software industry, design, tech, music, and my personal life.
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
         {`I've been online since 2000. Since then the internet changed a lot and meanwhile I've found a ton of cool things.
