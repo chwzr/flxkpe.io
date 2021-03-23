@@ -15,7 +15,7 @@ export default function About() {
           <div>
             <Image
               alt={`2019 Year in Review`}
-              src={`/me.png`}
+              src={`/me-min.png`}
               width={300}
               height={450}
               priority
