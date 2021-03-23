@@ -1,0 +1,18 @@
+
+https://accounts.spotify.com/authorize?client_id=986cf43a73574feabde3d79266dd01af&response_type=code&redirect_uri=http%3A%2F%2Flocalhost:3000&scope=user-read-currently-playing%20user-top-read
+
+
+
+http://localhost:3000/?code=AQBW1S1quDihuqby6sFP-dl5y4LGLqkiIMayJueqVUNm8RDDMNZvNFpl06FBCprTMjjkWo9DAT7VNDj8IEPbfvxtCCjD1Dzs-cLy5jSzJr1rtyp1_YgRVot_aI6BRbsBJlSfQP8MeNc6uVYTw6PDbRuTuvdLcFINUs4PiGBvLpJfiDOsO3XwJfvVucVXj0A6AjKaU18CUwUc4aY_k0zMAYSIojxg
+
+
+986cf43a73574feabde3d79266dd01af:38e193aee3254e15a634e948a4bbe718
+
+OTg2Y2Y0M2E3MzU3NGZlYWJkZTNkNzkyNjZkZDAxYWY6MzhlMTkzYWVlMzI1NGUxNWE2MzRlOTQ4YTRiYmU3MTg=
+
+
+curl -H "Authorization: Basic OTg2Y2Y0M2E3MzU3NGZlYWJkZTNkNzkyNjZkZDAxYWY6MzhlMTkzYWVlMzI1NGUxNWE2MzRlOTQ4YTRiYmU3MTg=" -d grant_type=authorization_code -d code=AQBW1S1quDihuqby6sFP-dl5y4LGLqkiIMayJueqVUNm8RDDMNZvNFpl06FBCprTMjjkWo9DAT7VNDj8IEPbfvxtCCjD1Dzs-cLy5jSzJr1rtyp1_YgRVot_aI6BRbsBJlSfQP8MeNc6uVYTw6PDbRuTuvdLcFINUs4PiGBvLpJfiDOsO3XwJfvVucVXj0A6AjKaU18CUwUc4aY_k0zMAYSIojxg -d redirect_uri=http%3A%2F%2Flocalhost:3000 https://accounts.spotify.com/api/token
+
+
+
+{"access_token":"BQCRtSEyTNKH6uZM_CEQ3SG54acQMKPO1K-ZoI6hsq86xfwumxfrOvg-nTT2F6wvMJLcweZeOTn7RMD5MPZBTPhk9Av7P7ke45gVN1ReM6yaY8-XllvGaAZZNQ4QRHiDvbYeqcdJz702JXII4U9XRXNw93xyEBxC8L_Up1nJF5A1OeXn","token_type":"Bearer","expires_in":3600,"refresh_token":"AQD9S-3MulSH3GKNhTbXj8WFsZvN1S7VTkjbdlYZQrSMF38c0rMYHNqUXVgnX05ovrw2gKOMKCyU4L_1oISqWxuKbz1JLOjyABuqPWHSry3WkCGhHcMeWUAa_0RQEd5F_j4","scope":"user-read-currently-playing user-top-read"}% 

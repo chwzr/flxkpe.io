@@ -1,0 +1,29 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/fonts/Studio_Feixen_Sans_Variable.woff2",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/portfolio.pdf",
+      "destination": "/portfolio.pdf"
+    },
+    {
+      "source": "/projects",
+      "destination": "/about"
+    },
+    {
+      "source": "/live",
+      "destination": "https://www.youtube.com/"
+    }
+  ]
+}
