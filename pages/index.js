@@ -31,8 +31,8 @@ export default function Home({ posts }) {
           Blog
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mb-4 font-normal">
-          {`I've been online since 2000, since then the internet changed a lot and meanwhile I've found a ton of cool things.
-            This is the place I want to share some of them, and my thoughts about them if I have any.
+          {`I've been online since 2000. Since then the internet changed a lot and meanwhile I've found a ton of cool things.
+            This is the place I want to share some of them.
             Use the search below to filter by title.`}
         </p>
         <div className="relative w-full mb-4">
