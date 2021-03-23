@@ -39,7 +39,7 @@
 html {
   min-width: 360px;
   scroll-behavior: smooth;
-  /* font-variation-settings: "wdth" 0; */
+  font-variation-settings: "wdth" 0;
   font-stretch: normal;
 }
 
