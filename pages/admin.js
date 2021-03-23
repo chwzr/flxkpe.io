@@ -75,7 +75,7 @@ export default function Dashboard() {
                 <datalist id="cats">
                   <option value="design">design</option>
                   <option value="dev">dev</option>
-                  <option value="security">hack</option>
+                  <option value="hack">hack</option>
                   <option value=""></option>
                 </datalist>
                 <input
