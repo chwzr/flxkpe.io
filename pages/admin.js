@@ -43,6 +43,13 @@ export default function Dashboard() {
               </p>
               <form onSubmit={newPost}>
                 <input
+                  name="id"
+                  aria-label="ID"
+                  type="text"
+                  placeholder="ID (optional)"
+                  className="px-4 py-2 border border-gray-300 dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full font-normal rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 mb-4"
+                />
+                <input
                   name="title"
                   aria-label="Title"
                   type="text"
@@ -76,9 +83,18 @@ export default function Dashboard() {
                   aria-label="URL"
                   type="text"
                   placeholder="URL"
-                  className="px-4 py-2 border border-gray-300 dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full font-normal rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
+                  className="px-4 py-2 border border-gray-300 dark:border-gray-900 mb-4 focus:ring-blue-500 focus:border-blue-500 block w-full font-normal rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
+                />
+
+                <textarea
+                  name="content"
+                  aria-label="Content"
+                  type="text"
+                  placeholder="Content"
+                  className="px-4 py-2 border border-gray-300 dark:border-gray-900 mb-4 focus:ring-blue-500 focus:border-blue-500 block w-full font-normal rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
                 />
                 <button className="flex text-white mt-8 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+
               </form>
 
 

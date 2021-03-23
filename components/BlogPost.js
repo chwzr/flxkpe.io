@@ -9,10 +9,22 @@ const BlogPost = (props) => {
   const { data } = useSWR(`/api/views/${slug}`, fetcher);
   const views = data?.total;
 
+
+
+  const countClick = async (e) => {
+    // e.preventDefault();
+    console.log("CLICK")
+    let k = await fetch(`/api/views/${slug}`, {
+      method: 'POST'
+    });
+    let o = await k.json()
+    console.log(o)
+  }
+
   if (type == 'link') {
     return (
 
-      <a className="w-full" target="_blank" rel="noopener noreferrer" href={url}>
+      <a className="w-full" target="_blank" rel="noopener noreferrer" href={url} onClick={countClick}>
         <div className="mb-8 w-full">
           <div className="flex flex-col md:flex-row justify-between">
             <div className="flex items-center mb-2 text-gray-900 dark:text-gray-100">
