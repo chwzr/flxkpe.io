@@ -1,0 +1,50 @@
+---
+title: 'MacOS Nice UX Commands'
+description: 'These Terminal Commands change the way you use Mac OS'
+logo: 'react.png'
+---
+
+
+## Faster Dock Hiding
+```
+defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock
+```
+
+## Faster Dock Hiding Undo
+```
+defaults write com.apple.dock autohide-delay -float 0.5; defaults write com.apple.dock autohide-time-modifier -int 0.5 ;killall Dock
+```
+
+## Add Dock Spacer 
+(paste for each spacer, drag out of dock to delete): 
+```
+defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}' && killall Dock
+```
+
+## Add Half-Height Dock Spacer 
+(paste for each, drag out of dock to delete): 
+```
+defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}' && killall Dock
+```
+
+## Disable Annoying Disk Warning 
+(must restart Mac to take effect): 
+```
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.DiskArbitration.diskarbitrationd.plist DADisableEjectNotification -bool YES && sudo pkill diskarbitrationd
+```
+## Re-Enable Annoying Disk Warning: 
+```
+sudo defaults delete /Library/Preferences/SystemConfiguration/com.apple.DiskArbitration.diskarbitrationd.plist DADisableEjectNotification && sudo pkill diskarbitrationd
+```
+
+## Change Screenshot Default to jpg
+(replace with png to undo): 
+```
+defaults write com.apple.screencapture type jpg
+```
+
+## Make hidden Apps Transparent in Dock:
+Hide a window with CMD + H
+```
+defaults write com.apple.Dock showhidden -bool TRUE && killall Dock
+```
